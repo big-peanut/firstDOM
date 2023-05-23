@@ -21,3 +21,19 @@ for(var i=0;i<li.length;i++)
     li[i].style.borderBottom="solid 3px #000"
 }
 
+var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.backgroundColor = 'green';
+
+var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+thirdItem.style.display = "None";
+
+var list=document.querySelectorAll('li')
+list[1].style.backgroundColor="green"
+
+var odditems=document.querySelectorAll('li:nth-child(odd)')
+
+for(var i=0;i<odditems.length;i++)
+{
+    odditems[i].style.backgroundColor="#f4f4f4"
+}
+
