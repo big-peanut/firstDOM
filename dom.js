@@ -37,3 +37,48 @@ for(var i=0;i<odditems.length;i++)
     odditems[i].style.backgroundColor="#f4f4f4"
 }
 
+var itemList=document.querySelector('#items');
+
+console.log(itemList.parentNode);
+itemList.parentNode.style.backgroundColor="black"
+console.log(itemList.parentNode.parentNode)
+
+var itemList=document.querySelector('#items');
+console.log(itemList.parentElement);
+console.log(itemList.parentElement.parentElement);
+
+console.log(itemList.childNodes);
+console.log(itemList.children);
+
+console.log(itemList.firstChild);
+console.log(itemList.firstElementChild);
+console.log(itemList.lastElementChild);
+
+console.log(itemList.nextSibling);
+console.log(itemList.nextElementSibling);
+
+console.log(itemList.previousSibling);
+console.log(itemList.previousElementSibling);
+
+var newDiv=document.createElement('div');
+newDiv.className="hello"
+newDiv.id="hello1"
+newDiv.setAttribute('title','hellotitle')
+
+var textNode=document.createTextNode("Hello World")
+newDiv.appendChild(textNode)
+var container=document.querySelector('header .container')
+var h1=document.querySelector('header h1')
+container.insertBefore(newDiv,h1)
+console.log(newDiv);
+
+var newh1=document.createElement('h1')
+newh1.className="h1"
+newh1.id="1h1"
+
+var node=document.createTextNode("Hello World")
+newh1.appendChild(node)
+var x=document.querySelector('ul .list-group')
+var y=document.querySelector('ul li .list-group-item')
+x.insertBefore(node,y)
+
